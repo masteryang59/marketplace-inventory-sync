@@ -1,0 +1,50 @@
+# The sync service plus both mock marketplaces. Mocks keep stock in memory,
+# so restart everything together: docker compose down && docker compose up
+services:
+  ebay-mock:
+    build: .
+    command: ["node", "mocks/server.js"]
+    env_file:
+      - path: .env
+        required: false
+    environment:
+      MOCK: ebay
+      EBAY_MOCK_PORT: 4001
+    ports:
+      - "4001:4001"
+
+  shopify-mock:
+    build: .
+    command: ["node", "mocks/server.js"]
+    env_file:
+      - path: .env
+        required: false
+    environment:
+      MOCK: shopify
+      SHOPIFY_MOCK_PORT: 4002
+    ports:
+      - "4002:4002"
+
+  sync:
+    build: .
+    env_file:
+      - path: .env
+        required: false
+    environment:
+      EBAY_BASE_URL: http://ebay-mock:4001
+      SHOPIFY_BASE_URL: http://shopify-mock:4002
+      DEMO_CONTROLS: ${DEMO_CONTROLS:-true}
+    ports:
+      - "3000:3000"
+    depends_on:
+      - ebay-mock
+      - shopify-mock
+    healthcheck:
+      test: ["CMD", "wget", "-qO-", "http://localhost:3000/health"]
+      interval: 10s
+      timeout: 3s
+      retries: 3
+validate_schema:
+  enabled: true
+extract_text:
+  enabled: true
