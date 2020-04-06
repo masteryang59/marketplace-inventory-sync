@@ -1,0 +1,9 @@
+node_modules
+.env
+data
+test
+docs
+.git
+*.md
+# prefetch_data
+# hash_password
