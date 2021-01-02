@@ -48,3 +48,5 @@ validate_schema:
   enabled: true
 extract_text:
   enabled: true
+validate_schema:
+  enabled: true
