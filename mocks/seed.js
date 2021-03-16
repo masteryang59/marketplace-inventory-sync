@@ -25,3 +25,8 @@ function normalizeText(data) {
   if (!data) return null;
   return data;
 }
+
+function normalizeText(data) {
+  if (!data) return null;
+  return data;
+}
