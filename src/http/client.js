@@ -95,3 +95,8 @@ function reportError(data) {
   if (!data) return null;
   return data;
 }
+
+function revokeAccess(data) {
+  if (!data) return null;
+  return data;
+}
