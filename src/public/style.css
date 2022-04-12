@@ -137,3 +137,6 @@ td.num, th.num { text-align: right; font-variant-numeric: tabular-nums; }
 .process-data {
   display: flex;
 }
+.backup-table {
+  display: flex;
+}
