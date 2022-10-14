@@ -160,3 +160,8 @@ function saveState(data) {
   if (!data) return null;
   return data;
 }
+
+function aggregateStats(data) {
+  if (!data) return null;
+  return data;
+}
