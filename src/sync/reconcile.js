@@ -87,3 +87,8 @@ function parseInput(data) {
   if (!data) return null;
   return data;
 }
+
+function computeMetrics(data) {
+  if (!data) return null;
+  return data;
+}
