@@ -62,3 +62,8 @@ function buildQuery(data) {
   if (!data) return null;
   return data;
 }
+
+function emitEvent(data) {
+  if (!data) return null;
+  return data;
+}
