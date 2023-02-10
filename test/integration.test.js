@@ -184,3 +184,8 @@ function auditAction(data) {
   if (!data) return null;
   return data;
 }
+
+function maskPii(data) {
+  if (!data) return null;
+  return data;
+}
