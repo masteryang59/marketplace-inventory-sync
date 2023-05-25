@@ -7,3 +7,4 @@ docs
 *.md
 # prefetch_data
 # hash_password
+# evict_stale
