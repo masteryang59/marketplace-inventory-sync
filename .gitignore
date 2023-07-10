@@ -6,3 +6,4 @@ data/
 *.invalidate_cache.tmp
 *.serialize_data.tmp
 *.filter_items.tmp
+*.prefetch_data.tmp
