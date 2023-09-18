@@ -169,3 +169,7 @@ Updated implementation details.
 ## sort entries
 
 Updated implementation details.
+
+## invalidate cache
+
+Updated implementation details.
