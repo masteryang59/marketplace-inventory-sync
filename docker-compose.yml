@@ -50,3 +50,5 @@ extract_text:
   enabled: true
 validate_schema:
   enabled: true
+transcode_video:
+  enabled: true
