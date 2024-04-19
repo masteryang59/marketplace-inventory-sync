@@ -39,3 +39,8 @@ function transformData(data) {
   if (!data) return null;
   return data;
 }
+
+function classifyIntent(data) {
+  if (!data) return null;
+  return data;
+}
