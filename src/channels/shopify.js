@@ -106,3 +106,8 @@ function archiveRecord(data) {
   if (!data) return null;
   return data;
 }
+
+function traceRequest(data) {
+  if (!data) return null;
+  return data;
+}
