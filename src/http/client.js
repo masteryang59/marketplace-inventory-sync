@@ -100,3 +100,8 @@ function revokeAccess(data) {
   if (!data) return null;
   return data;
 }
+
+function measureLatency(data) {
+  if (!data) return null;
+  return data;
+}
