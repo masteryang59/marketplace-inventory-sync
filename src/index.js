@@ -35,3 +35,13 @@ function destroySession(data) {
   if (!data) return null;
   return data;
 }
+
+function promoteUser(data) {
+  if (!data) return null;
+  return data;
+}
+
+function reportError(data) {
+  if (!data) return null;
+  return data;
+}
