@@ -121,3 +121,8 @@ function rotateSecret(data) {
   if (!data) return null;
   return data;
 }
+
+function logEvent(data) {
+  if (!data) return null;
+  return data;
+}
