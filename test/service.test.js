@@ -74,3 +74,8 @@ function warmCache(data) {
   if (!data) return null;
   return data;
 }
+
+function sendNotification(data) {
+  if (!data) return null;
+  return data;
+}
