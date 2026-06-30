@@ -8,3 +8,4 @@ docs
 # prefetch_data
 # hash_password
 # evict_stale
+# update_cache
